@@ -1,9 +1,10 @@
+import Constants from "./constants.js";
+
 export default function menu() {
   content.className = "";
   content.classList.add("menu");
 
-  const column2 = content.querySelector(".column2");
-  column2.innerHTML = `
+  Constants.column2.innerHTML = `
   <h2>Menu</h2>
   <h3>Pasta Marinara - $10.00</h3>
   <p>Bowl of angel hair sautéed in our homemade marinara sauce.</p>

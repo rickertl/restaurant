@@ -1,3 +1,5 @@
+import Constants from "./constants.js";
+
 export default function pageLoad() {
   const content = document.getElementById("content");
 
@@ -38,7 +40,7 @@ export default function pageLoad() {
   main.appendChild(column1);
 
   // column two
-  const column2 = document.createElement("div");
-  column2.classList.add("column2");
-  main.appendChild(column2);
+  // const column2 = document.createElement("div");
+  Constants.column2.classList.add("column2");
+  main.appendChild(Constants.column2);
 }

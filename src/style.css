@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+
+:root {
+  --container-width: 800px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: maroon;
+}
+h1 {
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+  margin: 20px;
+}
+h2 {
+  margin-bottom: 10px;
+}
+p {
+  margin-bottom: 10px;
+  line-height: 1.25;
+  font-size: 1.05rem;
+}
+main {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  max-width: var(--container-width);
+  min-height: 250px;
+  margin: 0 auto 40px;
+  border: 2px solid black;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.nav {
+  max-width: var(--container-width);
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin: 0 auto;
+  padding-right: 30px;
+}
+.nav .tab {
+  background-color: white;
+  width: 100px;
+  border-radius: 10px 10px 0 0;
+  padding: 4px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.nav .tab:hover {
+  color: white;
+  background-color: black;
+}
+.home .column1 {
+  background: url("./bowl-of-pasta.jpg");
+  background-size: cover;
+  background-position: left;
+}
+.menu .column1 {
+  background: url("./hand-on-menu.jpg");
+  background-size: cover;
+  background-position: left;
+}
+.contact .column1 {
+  background: url("./payphone-on-brick-wall.jpg");
+  background-size: cover;
+  background-position: left;
+}
+.column2 {
+  background-color: antiquewhite;
+  padding: 20px;
+}

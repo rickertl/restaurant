@@ -15,20 +15,17 @@ export default function pageLoad() {
   nav.classList.add("nav");
   header.append(nav);
 
-  const tab1 = document.createElement("div");
-  tab1.classList.add("tab", "tab1");
-  tab1.textContent = "Home";
-  nav.appendChild(tab1);
+  Constants.tab1.classList.add("tab", "tab1");
+  Constants.tab1.textContent = "Home";
+  nav.appendChild(Constants.tab1);
 
-  const tab2 = document.createElement("div");
-  tab2.classList.add("tab", "tab2");
-  tab2.textContent = "Menu";
-  nav.appendChild(tab2);
+  Constants.tab2.classList.add("tab", "tab2");
+  Constants.tab2.textContent = "Menu";
+  nav.appendChild(Constants.tab2);
 
-  const tab3 = document.createElement("div");
-  tab3.classList.add("tab", "tab3");
-  tab3.textContent = "Contact";
-  nav.appendChild(tab3);
+  Constants.tab3.classList.add("tab", "tab3");
+  Constants.tab3.textContent = "Contact";
+  nav.appendChild(Constants.tab3);
 
   // main
   const main = document.createElement("main");
@@ -40,7 +37,6 @@ export default function pageLoad() {
   main.appendChild(column1);
 
   // column two
-  // const column2 = document.createElement("div");
   Constants.column2.classList.add("column2");
   main.appendChild(Constants.column2);
 }

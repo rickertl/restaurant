@@ -1,17 +1,16 @@
 import "./style.css";
-import pageLoad from "./page-load.js";
+import { tab1, tab2, tab3, pageBuild } from "./page-build.js";
 import home from "./home.js";
 import menu from "./menu.js";
 import contact from "./contact.js";
-import Constants from "./constants.js";
 
 // initialize hompeage
-pageLoad();
+pageBuild();
 home();
 
 // watch for nav clicks
-Constants.tab1.addEventListener("click", home);
+tab1.addEventListener("click", home);
 
-Constants.tab2.addEventListener("click", menu);
+tab2.addEventListener("click", menu);
 
-Constants.tab3.addEventListener("click", contact);
+tab3.addEventListener("click", contact);
